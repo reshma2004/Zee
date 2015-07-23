@@ -1,0 +1,40 @@
+/* ######### CSS for vertical menu demo  ######### */
+
+
+ul.shadowblockmenu-v{
+font: bold 14px Germand;
+width: 155px; /* width of menu */
+padding: 0;
+margin-top: 0px;
+list-style: none;
+
+}
+
+ul.shadowblockmenu-v li{
+/*margin: 0;*/
+margin-bottom: 3px;  /* Changed from 5 to 0px */
+padding-left:5px;
+padding-top:13px;
+width: 100%;
+
+}
+
+ul.shadowblockmenu-v li a{
+display:block;
+width: 100%;
+color: #161617;
+padding: 10px 15px;
+text-decoration: none;
+border-radius: 15px;
+-moz-box-shadow: inset 7px 0 10px rgba(224, 255, 163, 0.6); /* Add inset shadow to each menu item. First 3 values in (224, 255, 163, 0.5) specifies rgb values, last specifies opacity */
+-webkit-box-shadow: inset 7px 0 10px rgba(224, 255, 163, 0.6);
+box-shadow: inset 7px 0 10px rgba(224, 255, 163, 0.6);
+text-align: center;
+}
+
+ul.shadowblockmenu-v li a:hover, ul.shadowblockmenu-v li a.selected{
+color: #b0b1ae;
+-moz-box-shadow: inset 7px 0 10px rgb(25, 49, 86,0.5), inset 0 0 15px rgba(25, 49, 86, 0.6), inset 0 0 20px rgba(25, 49, 86, 0.8); /* Add 3 inset shadows to each menu item  */
+-webkit-box-shadow: inset 7px 0 10px rgba(25, 49, 86, 0.5), inset 0 0 15px rgba(25, 49, 86, 0.6), inset 0 0 20px rgba(25, 49, 86, 0.8);
+box-shadow: inset 7px 0 10px rgba(25, 49, 86, 0.5), inset 0 0 15px rgba(25, 49, 86, 0.6), inset 0 0 20px rgba(25, 49, 86, 0.8);
+}

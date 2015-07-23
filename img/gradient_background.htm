@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<title>CSS3 Gradient background</title>
+
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="gradient_background_files/style.css">
+
+	<style>
+	  #content > div { height: 100px; }
+	</style>
+</head>
+
+<body>
+
+<div id="demo-top-bar">
+
+  <div id="demo-bar-inside">
+
+    <h2 id="demo-bar-badge">
+      <a href="https://css-tricks.com/">CSS-Tricks Example</a>
+    </h2>
+
+    <div id="demo-bar-buttons">
+      <a class="header-button" href="https://css-tricks.com/css3-gradients/">← Back to Article</a> &nbsp; <a class="header-button" href="https://css-tricks.com/examples/">More Demos →</a>    </div>
+
+  </div>
+
+</div>
+	<div id="content">
+
+
+
+
+		<h1>CSS3 Gradient Backgrounds</h1>
+
+
+
+
+		<h2>Linear Gradient (Top → Bottom)</h2>
+
+		<div id="linearBg2"></div>
+		<style scoped="" spellcheck="off" contenteditable="">#linearBg2 {
+  /* fallback */
+  background-color: #1a82f7;
+  background: url(images/linear_bg_2.png);
+  background-repeat: repeat-x;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #2F2727, #1a82f7);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #2F2727, #1a82f7);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #2F2727, #1a82f7);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #2F2727, #1a82f7);
+}</style>
+
+
+
+
+		<h2>Linear Gradient (Left → Right)</h2>
+
+		<div id="linearBg1"></div>
+
+		<style scoped="" contenteditable="">#linearBg1 {
+  /* fallback */
+  background-color: #1a82f7;
+  background-image: url(images/linear_bg_1.png);
+  background-repeat: repeat-y;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(left, #2F2727, #1a82f7);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(left, #2F2727, #1a82f7);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(left, #2F2727, #1a82f7);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #2F2727, #1a82f7);
+}</style>
+
+
+<h2>Linear Gradient (with Even Stops)</h2>
+
+		<div id="even-stops"></div>
+
+		<style scoped="" contenteditable="">#even-stops {
+  /* fallback DIY*/
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, left top, right top, from(#2F2727), color-stop(0.25, #1a82f7), color-stop(0.5, #2F2727), color-stop(0.75, #1a82f7), to(#2F2727));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-linear-gradient(left, #2F2727, #1a82f7, #2F2727, #1a82f7, #2F2727);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(left, #2F2727, #1a82f7, #2F2727, #1a82f7, #2F2727);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(left, #2F2727, #1a82f7, #2F2727, #1a82f7, #2F2727);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #2F2727, #1a82f7, #2F2727, #1a82f7, #2F2727);
+}</style>
+
+
+
+<h2>Linear Gradient (with Specified Arbitrary Stops)</h2>
+
+		<div id="arbitrary-stops"></div>
+
+		<style scoped="" contenteditable="">#arbitrary-stops {
+  /* fallback DIY*/
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, left top, right top, from(#2F2727), color-stop(0.05, #1a82f7), color-stop(0.5, #2F2727), color-stop(0.95, #1a82f7), to(#2F2727));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
+}</style>
+
+
+
+		<h2>Radial Gradient (Centered, Full Size)</h2>
+
+		<div id="radial-center"></div>
+		<style scoped="" contenteditable="">#radial-center {
+  /* fallback */
+  background-color: #2F2727;
+  background-image: url(images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
+
+  /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+}</style>
+
+
+
+  <h2>Radial Gradient (Positioned, Sized)</h2>
+
+  <p>Warning: Not Consistent Among Browsers</p>
+
+  <div id="radial-position"></div>
+  <style scoped="" contenteditable="">#radial-position {
+  /* fallback */
+  background-color: #2F2727;
+  background-image: url(images/radial_fancy.png);
+  background-position: 80% 20%;
+  background-repeat: no-repeat;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(radial, 80% 20%, 0, 80% 40%, 100, from(#1a82f7), to(#2F2727));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(80% 20%, closest-corner, #1a82f7, #2F2727);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(80% 20%, closest-corner, #1a82f7, #2F2727);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(80% 20%, closest-corner, #1a82f7, #2F2727);
+
+  /* Opera cannot do radial gradients yet */
+}</style>
+
+	<p>Shape keywords: circle, ellipse</p>
+	<p>Size keywords: closest-side, closest-corner, farthest-side, farthest-corner, contain, cover</p>
+
+	</div>
+
+ <style type="text/css" style="display: none !important;">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	#demo-top-bar {
+		text-align: left;
+		background: #222;
+		position: relative;
+		zoom: 1;
+		width: 100% !important;
+		z-index: 6000;
+		padding: 20px 0 20px;
+	}
+	#demo-bar-inside {
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+	}
+	#demo-bar-buttons {
+		padding-top: 10px;
+		float: right;
+	}
+	#demo-bar-buttons a {
+		font-size: 12px;
+		margin-left: 20px;
+		color: white;
+		margin: 2px 0;
+		text-decoration: none;
+		font: 14px "Lucida Grande", Sans-Serif !important;
+	}
+	#demo-bar-buttons a:hover,
+	#demo-bar-buttons a:focus {
+		text-decoration: underline;
+	}
+	#demo-bar-badge {
+		display: inline-block;
+		width: 302px;
+		padding: 0 !important;
+		margin: 0 !important;
+		background-color: transparent !important;
+	}
+	#demo-bar-badge a {
+		display: block;
+		width: 100%;
+		height: 38px;
+		border-radius: 0;
+		bottom: auto;
+		margin: 0;
+		background: url(/images/examples-logo.png) no-repeat;
+		background-size: 100%;
+		overflow: hidden;
+		text-indent: -9999px;
+	}
+	#demo-bar-badge:before, #demo-bar-badge:after {
+		display: none !important;
+	}
+</style>
+
+
+</body></html>

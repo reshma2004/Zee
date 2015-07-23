@@ -1,0 +1,59 @@
+.indentmenu{
+	font: bold 13px Arial;
+	width: 100%; /*leave this value as is in most cases*/
+}
+
+.indentmenu ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.indentmenu ul li{
+display: block;
+}
+
+.indentmenu ul li a{
+	float: left;
+	color: white; /*text color*/
+	padding: 6px 11px;
+	text-decoration: none;
+	/*border: 1px solid red; navy divider between menu items*/
+	
+	height: auto;
+	 background: url('../img/time1.png'); 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px;
+	margin-top: 110px;
+	display: block;
+	width: 80px;
+}
+
+.indentmenu ul li a:visited{
+	color: white;
+}
+
+.indentmenu ul li a.selected{
+	color: white !important;
+	padding-top: 8px; /*shift text down 1px*/
+	padding-bottom: 4px;
+	background: black url('../img/time2.png') center center repeat-x;
+}
+
+.tabcontent_style{ /*style of tab content oontainer*/
+	width: 350px;
+	margin-top: -212px;
+	text-align: center;
+	margin-left: 80px;
+}
+
+.tabcontent{
+display: none;
+}
+
+@media print {
+.tabcontent {
+display:block !important;
+}
+}
