@@ -8112,9 +8112,19 @@ body {
 	background-repeat: none;
 	position: relative;
 	height: 327px;
-	width: 347px;   /* Change the widht to 25% of 1349 to make 4 columns align in-line it makes 337.25*/
+	width: 337px;   /* Change the widht to 25% of 1349 to make 4 columns align in-line it makes 337.25*/
 	background-size: cover;
 	margin-bottom: 10px;
+}
+.text-style {
+  margin: -210 0 0 0;
+}
+.box-style {
+  background: #eee;
+  overflow: scroll;
+  border: 1px solid ;
+  height: 295px;
+  width: 307px;
 }
 
 /*
